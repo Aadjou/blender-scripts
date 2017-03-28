@@ -4,7 +4,7 @@ import array
 C = bpy.context
 O = bpy.ops
 
-def toggle_smooth_split_normals(obj):
+def toggle_split_normals(obj):
 	# Toggle the use of custom split normals. Custom split normals are preserved.
 	me = obj.data
 	# This will override blender smoothing for the entire mesh. 
@@ -46,7 +46,7 @@ bl_objects = C.selected_objects
 
 for obj in bl_objects:
 	# Toggle the visibility of the custom vertex normals
-	#toggle_smooth_split_normals(obj)
+	#toggle_split_normals(obj)
 	
 	# Remove all custom vertex normal data from this mesh
 	remove_split_normals(obj)
