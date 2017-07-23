@@ -1,4 +1,6 @@
 # This script shows how to get all connected faces of a bmesh
+# There are two versions of the function. a simple one
+# and one that can take angle, material and large meshes into account.
 
 import bpy
 import bmesh
